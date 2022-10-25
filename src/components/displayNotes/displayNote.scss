@@ -1,0 +1,20 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 40px 140px;
+    
+    .display-items {
+        background: white;
+        padding: 10px 10px;
+        border-radius: 20px;
+        margin: 10px 10px;
+    }
+}
+.loader {
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    overflow: hidden;
+
+}

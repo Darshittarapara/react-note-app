@@ -1,0 +1,31 @@
+
+    .header {
+        background: rgb(123, 104, 104);
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 30px;
+        align-items: center;
+        height: 60px;
+        
+        .title {
+        display: inline-flex;
+        align-items: center;
+    
+         
+          nav {
+            margin-top: 10px;
+             ul {
+                list-style-type: none;
+                font-size: 19px;
+                transition: all 0.25s ease-in-out;
+                &:hover {
+                    cursor: pointer;
+                    color: white;
+                }
+             }
+          }
+        }
+
+        
+
+}

@@ -1,23 +1,29 @@
-import logo from './logo.svg';
+import React, { useEffect } from 'react';
 import './App.css';
+import Header from './components/Header/Header';
+import AddNotes from './components/addNotes/AddNotes';
+import DisplayNotes from './components/displayNotes/DisplayNotes';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import SearchNote from './components/searchNote/SearchNote';
 
-function App() {
+
+function App() { 
+
+ useEffect(()=> {
+  localStorage.clear();
+},[])
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Header />
+        <Routes>
+          <Route path='/' element={<AddNotes />} />
+          <Route path='/display' element={<DisplayNotes />} />
+          <Route path='/search' element={<SearchNote />} />
+        </Routes>
+      </Router>
+
+
     </div>
   );
 }

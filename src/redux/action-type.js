@@ -1,0 +1,8 @@
+export const ADD_NOTES = "ADD_NOTES";
+export const REMOVE_NOTES = 'REMOVE_NOTES';
+export const EDIT_NOTES = "EDIT_NOTES";
+export const UPDATE_NOTE = "UPDATE_NOTES";
+export const CANCEL_ITEMS_VALUE = "CANCEL_ITEMS_VALUE";
+export const SEARCH_NOTE = "SEARCH_NOTE";
+export const DELETE_ITEMS = "DELETE_ITEMS";
+export const CANCEL_UPDATE_VALUE ="CANCEL_UPDATE_VALUE"

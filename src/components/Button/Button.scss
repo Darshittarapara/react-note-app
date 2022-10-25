@@ -1,0 +1,22 @@
+.card-link {
+    
+    margin:0px 10px;
+}
+button {
+    background: rgb(60, 60, 80);
+    padding: 5px 20px;
+    color: white;
+    transition: all 0.25s ease-in-out;
+    border: 0px;
+    width: 110px;
+    margin: 0px 6px;
+
+
+    &:hover  {
+        background: rgb(75, 75, 126);
+    }
+    &:disabled {
+        background: silver;
+        cursor: not-allowed;
+    }
+}

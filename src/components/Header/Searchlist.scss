@@ -1,0 +1,16 @@
+.search {
+    input {
+        padding: 5px 10px;
+
+        &::placeholder {
+            border: 0px;
+            font-size: 17px;
+            text-transform: capitalize;
+        }
+        &:focus {
+            border: 2px solid #44445b;
+            box-shadow: 0px 0px 5px 10px rgb(84, 84, 96);
+        }
+    }
+
+}
